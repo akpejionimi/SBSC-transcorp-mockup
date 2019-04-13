@@ -703,7 +703,7 @@ padding: 2px;
   (min-width:280px) and
   (max-width:800px){
     .blog{
-        height: 200vh;
+        height: 160vh;
     }
     .blog h1{
         width: 80%;
