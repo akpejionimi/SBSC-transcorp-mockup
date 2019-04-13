@@ -42,7 +42,7 @@
 
 /* media query for navbar */
 @media screen and 
-  (min-width:400px) and
+  (min-width:280px) and
   (max-width:800px){
 .hamb-menu{
         display: block;
@@ -56,13 +56,14 @@
     display: none;
     position: absolute;
     left: 0;
+    z-index: 100;
     
 }
 
 .nav-list{
     display: block;
     background-color: rgb(15, 13, 13);
-    color: rgb(187, 34, 34);
+    color: rgb(119, 114, 114);
 }
 .logo{
     display: block;
@@ -219,7 +220,7 @@ padding: 2px;
 }
 /* media query for wrapper */
 @media screen and 
-  (min-width:400px) and
+  (min-width:280px) and
   (max-width:800px){
     .wrapper{
         background-color: #fff;
@@ -344,7 +345,7 @@ padding: 2px;
 }
 /* media query for About-us div */
 @media screen and 
-  (min-width:400px) and
+  (min-width:280px) and
   (max-width:800px){
     .about-us{
         margin-top: 40px;
@@ -464,7 +465,7 @@ padding: 2px;
 }
 /* media query for interior div */
 @media screen and 
-  (min-width:400px) and
+  (min-width:280px) and
   (max-width:800px){
     .interior{
         display: flex;
@@ -575,11 +576,11 @@ padding: 2px;
 
 /* media query for testimonial div */
 @media screen and 
-  (min-width:400px) and
+  (min-width:280px) and
   (max-width:800px){
       .testiomial-box{
         width: 80%;
-        height: 100vh;
+        height: 110vh;
         position: absolute;
         top: 7%;
         left: 11%;
@@ -594,8 +595,8 @@ padding: 2px;
       }
     .testiomial-box p{
         margin: auto;
-        width: 90%;
-        height: 45vh; 
+        width: 100%;
+        height: 50vh; 
         margin-top: 20px;
     }
     .guest-photo{
@@ -614,7 +615,7 @@ padding: 2px;
         font-size: 16px;
         color: rgb(82, 78, 78);
         position: absolute;
-        bottom: 4%; 
+        bottom: 2%; 
         left: 35%;
     }
   }
@@ -696,7 +697,7 @@ padding: 2px;
 } 
 /* media query for blog div */
 @media screen and 
-  (min-width:400px) and
+  (min-width:280px) and
   (max-width:800px){
     .blog{
         height: 190vh;
@@ -783,7 +784,8 @@ padding: 2px;
 .contact-us .call{
     width: 60%;
     margin: auto;
-    height: 10vh;
+    margin-top: 30px;
+    height:5vh;
     font-family: SourceSansPro;
     font-size: 14px;
     line-height: 2.14;
@@ -818,7 +820,7 @@ padding: 2px;
 
 /* media query for contact div */
 @media screen and 
-  (min-width:400px) and
+  (min-width:280px) and
   (max-width:800px){
     .contact{
         display: flex;
@@ -832,13 +834,26 @@ padding: 2px;
     .contact-us .address{
         width: 70%;
     }
+    .contact-us h2{
+        text-align: center;
+        width: 100%;
+
+    }
     .contact-us .call{
         height: 10vh;
         margin-top: 20px;
-       
+    }
+    .contact-us .call{
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+        height: 4vh;
     }
     .contact-us .num {
-        height: 20vh;;
+        width: 100%;
+        height: 10vh;
+        font-size: 25px;
+        text-align: center;
     }
 }
 
@@ -921,7 +936,7 @@ margin-top: 30px;
 /* media query for footer */
 
 @media screen and 
-  (min-width:400px) and
+  (min-width:280px) and
   (max-width:800px){
     .footer{
         width: 100%;
