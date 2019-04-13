@@ -5,112 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <title>transcorp </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Transcorp</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="nav_left menu-bar">
-            <span class="menu">HOME</span>
-            <span class="menu">ABOUT US</span>
-            <span class="menu">OUR ROOMS</span>
+    <div class="navbar-main">
+        <div class="mobile-nav">
+            <img class="logo mobile-logo" src="./images//transcorp-1@2x.jpg" alt="transcorp logo">
+            <div class="hamb-menu" id="hamb-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-        <div class="logo">
-            <img class="logo" src="./images//transcorp-1@2x.jpg" alt="transcorp logo">
-        </div>
-        <div class="nav_right menu-bar">
-            <span class="menu">RESERVATION</span>
-            <span class="menu">BLOG</span>
-            <span class="menu">CONTACT</span>
+        <div class="navbar container col-lg-10 col-md-12" id="navLinks">
+            <span class="menu nav-list">HOME</span>
+            <span class="menu nav-list">ABOUT US</span>
+            <span class="menu nav-list">OUR ROOMS</span>
+            <img class="logo mobile-log" src="./images//transcorp-1@2x.jpg" alt="transcorp logo">
+            <span class="menu nav-list">RESERVATION</span>
+            <span class="menu nav-list">BLOG</span>
+            <span class="menu nav-list">CONTACT</span>
         </div>
     </div>
+    <!-- home section -->
     <div class="wrapper">
-        <!-- <div class="main-view">
-            <img class="trans-photo" src="./images//tanscorp_bg.png" alt="transcorp hotel">
-        </div> -->
         <div class="transcorp">
-            <h4 class="welcome-to">WELCOME TO</h4>
-            <h1 class="trancorp_hotel">TRANSCORP HOTEL</h1>
-            <p>A place to expereince and enjoy the life</p>
+            <div class="text-position">
+                <h4 class="welcome-to">WELCOME TO</h4>
+                <h1 class="trancorp_hotel">TRANSCORP HOTEL</h1>
+                <p>A place to expereince and enjoy the life</p>
+                <div class="clip">
+                    <img src="./images/ic-play-circle-outline.svg" alt="video clip">
+                </div>
+            </div>
         </div>
-        <div class="box">
-            <div class="card-left">
-                <div class="card">
-                        <h2>CHECK IN</h2>
-                  
-                    <div class="date">
-                            <h4><span>24</span>/JUNE</h4>
-                        <i class="fa fa-chevron-down"></i>
-                    </div>
-                </div>
-                <div class="card border-style">
-                        <h2>CHECK OUT</h2>
-                    <div class="date">
-                        <h4><span>29</span>/JUNE</h4>
-                        <i class="fa fa-chevron-down"></i>
-                    </div>
-                </div>
-                <div class="card">
-                        <h2>Guest</h2>
-                    <div class="date">
-                            <h4><span>03</span></h4>
-                        <i class="fa fa-chevron-down"></i>
-                    </div>
-                </div>
+    </div>
+    <div class="box">
+        <div class="card-left">
+            <div class="Card-show">
+                <p>CHECK IN</p>
+                <span>24</span> /JUNE <i class="fa fa-chevron-down"></i>
             </div>
-            <div class="card card-right">
-                <p>Have a promotional code?</p>
-                <div class="availability">Check availability</div>
+            <div class="Card-show">
+                <p>CHECK OUT</p>
+                <span>29</span> /JUNE <i class="fa fa-chevron-down"></i>
             </div>
+            <div class="Card-show">
+                <p>GUEST</p>
+                <span>03</span> /JUNE <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class=" card-right">
+            <p>Have a promotional code?</p>
+            <button class="availability">Check availability</button>
         </div>
     </div>
     <div class="about-us">
         <h3>ABOUT US</h3>
-        <h1>A best place to enjoy your life</h1>
+        <h1>The best place to enjoy your life</h1>
         <p>Transcorp Hilton Hotel is situated in the heart of Nigeria’s Federal Capital Territory, a 40-minute drive
             from the Nnamdi Azikiwe International Airport in Abuja. It is a 670–room, 5-star hotel that provides luxury
             accommodation, exotic cuisine, and fully equipped meeting rooms and to business travellers and tourists from
             all over the world</p>
         <div class="transcorp-guest">
-            <img class="lounge" src="images//lounge.jpg" alt="lounge">
-        </div>
-        <div class="more">
-            <h3>VIEW MORE PHOTOS</h3>
+            <div class="lounge-position">
+                <img class="lounge" src="images//lounge.jpg" alt="lounge">
+            </div>
+            <div class="more">
+                <a href="">
+                    <h3>VIEW MORE PHOTOS</h3>
+                </a>
+                <hr>
+            </div>
         </div>
     </div>
     <div class="interior">
         <div class="interior-details">
             <h5>DISCOVER OUR ROOMS</h5>
             <h1>Luxury interior</h1>
-            <div class="room-info room-info2">
-                <div class="room-photo">
-                    <img class="room-desc" src="./images//rectangle-9-copy@2x.png" alt="room">
+            <div class="overflow-control">
+                <div class="room-info room-info2">
+                    <div class="room-photo">
+                        <img class="room-desc" src="./images//rectangle-9-copy@2x.png" alt="room">
+                    </div>
+                    <div class="room-spec">
+                        <h4>Classic Room</h4>
+                        <p>starting from <span>$40.00</span>/night</p>
+                    </div>
                 </div>
-                <div class="room-spec">
-                    <h4>Classic Room</h4>
-                    <p>starting from <span>$40.00</span>/night</p>
+                <div class="room-info room-info3">
+                    <div class="room-photo">
+                        <img class="room-desc" src="./images//rectangle-9-copy-2@3x.png" alt="room">
+                    </div>
+                    <div class="room-spec">
+                        <h4>Classic Room</h4>
+                        <p>starting from <span>$40.00</span>/night</p>
+                    </div>
                 </div>
-            </div>
-            <div class="room-info room-info3">
-                <div class="room-photo">
-                    <img class="room-desc" src="./images//rectangle-9-copy-2@3x.png" alt="room">
+                <div class="room-info room-info3">
+                    <div class="room-photo">
+                        <img class="room-desc" src="./images//rectangle-9-copy-3@2x.png" alt="room">
+                    </div>
+                    <div class="room-spec">
+                        <h4>Classic Room</h4>
+                        <p>starting from <span>$40.00</span>/night</p>
+                    </div>
                 </div>
-                <div class="room-spec">
-                    <h4>Classic Room</h4>
-                    <p>starting from <span>$40.00</span>/night</p>
+                <div class="room-info room-info3">
+                    <div class="room-photo">
+                        <img class="room-desc" src="./images//rectangle-9-copy-2@3x.png" alt="room">
+                    </div>
+                    <div class="room-spec">
+                        <h4>Classic Room</h4>
+                        <p>starting from <span>$40.00</span>/night</p>
+                    </div>
                 </div>
-            </div>
-            <div class="room-info room-info3">
-                <div class="room-photo">
-                    <img class="room-desc" src="./images//rectangle-9-copy-3@2x.png" alt="room">
-                </div>
-                <div class="room-spec">
-                    <h4>Classic Room</h4>
-                    <p>starting from <span>$40.00</span>/night</p>
+                <div class="room-info room-info2">
+                    <div class="room-photo">
+                        <img class="room-desc" src="./images//rectangle-9-copy@2x.png" alt="room">
+                    </div>
+                    <div class="room-spec">
+                        <h4>Classic Room</h4>
+                        <p>starting from <span>$40.00</span>/night</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,6 +150,12 @@
             <div class="guest-photo">
                 <img class="oval" src="./images//oval@2x.jpg" alt="guest">
                 <span>FARAH WILIAMS</span>
+                <div class="test-scroll">
+                    <i class="orange-fa fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class=" fa fa-circle"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -181,7 +210,7 @@
     </div>
     <div class="footer">
         <div class="footer-menu">
-            <div class="map_menu">
+            <div class="footer-nav">
                 <ul>
                     <li>Site Map</li>
                     <li>Terms and Condition</li>
@@ -190,7 +219,7 @@
                     <li>Affiliate</li>
                 </ul>
             </div>
-            <div class="map_menu">
+            <div class="footer-nav">
                 <ul>
                     <li>Our Location</li>
                     <li>Career</li>
@@ -198,7 +227,7 @@
                     <li>Contact</li>
                 </ul>
             </div>
-            <div class="map_menu">
+            <div class="footer-nav">
                 <ul>
                     <li>FAQs</li>
                     <li>Blog</li>
@@ -219,9 +248,10 @@
         <div class="footer-icons">
             <div class="socials">
                 <img class="media-icons" src="./images//group-9.svg" alt="social media icons">
-
             </div>
         </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

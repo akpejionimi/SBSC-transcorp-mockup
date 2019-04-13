@@ -4,177 +4,295 @@
     padding: 0;
     outline: 0; 
     font-family: 'PT Serif', serif;
+    border-style: none;
 }
-
 
 /* navbar css */
 .navbar{
   display: flex;
-  width: 80%;
+  width: 100%;
   height:10vh;
   background-color: #ffffff;
   margin: auto;
-  justify-content: space-evenly;;
+  /* justify-content: space-evenly;; */
 }
 
 .menu-bar{
     justify-content: space-evenly;
-    padding: 20px;
+    padding-right: 20px;
 }
-.menu{
-    padding: 20px;
-
-}
-
 .logo{
-    width: 150px;
     height: 39px;
     padding-top: 7px;
     object-fit: contain; 
   
 }
+.mobile-logo{
+    display: none;
+}
 
 .menu{
-    width: 89px;
     height: 18px;
+    padding: 20px;
     font-family: SourceSansPro;
-    font-size: 12px;
+    font-size: 0.9em;
     letter-spacing: 0.6px;
-    text-align: justify;
     color: #526173;
 }
+
+/* media query for navbar */
+@media screen and 
+  (min-width:400px) and
+  (max-width:800px){
+.hamb-menu{
+        display: block;
+ 
+}
+.mobile-nav{
+    display: flex;
+    justify-content: space-between;
+}
+#navLinks{
+    display: none;
+    position: absolute;
+    left: 0;
+    
+}
+
+.nav-list{
+    display: block;
+    background-color: rgb(15, 13, 13);
+    color: rgb(187, 34, 34);
+}
+.logo{
+    display: block;
+}
+.mobile-log{
+    display: none;
+}
+.hamb-menu div{
+     width: 35px;
+     height: 3px;
+     background-color: black;
+     margin: 5px 0; 
+     transition: 1s
+}
+
+.change div:nth-child(1){
+    transform: rotate(45deg) translate(3px, 15px);
+}
+
+.change div:nth-child(2){
+    opacity: 0;
+}
+
+.change div:nth-child(3){
+    transform: rotate(-45deg) translate(-3px,-10px);
+}
+.nav-list span{
+border-bottom: 1 solid rgb(204, 134, 109);
+padding: 2px;
+}
+}
+
+/* wrapper div css */
 .wrapper{
     display: flex;
-    height: 110vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
     background-image: url(./images//tanscorp_bg.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
 }
-/* .main-view{
-    width: 100%;
-    height: 110vh;
-    
-}
-.trans-photo{
-    width: 100%;
-    object-fit: contain;
-    height: 90vh;
-    opacity: 0.8;
-} */
-.welcome-to{
-  font-family: SourceSansPro;
-  font-size: 1.4em;
-  font-weight: bolder;
-  letter-spacing: 4.9px;
-  color: #ffffff;
-  opacity: 1;
-}
-.trancorp_hotel{
-  font-family: Georgia;
-  font-size: 40px;
-  font-weight: bolder;
-  letter-spacing: 3.1px;
-  color: #ffffff;
-  padding: 30px;
-}
 .transcorp{
-    text-align: center;
+    width: 100%;
+    height: 70vh;
     position: absolute;
-    top: 10%;
-    margin:auto;
+    top: -0%;
     justify-content: space-evenly;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(67, 67, 67, 0.2));
     color: white;
 }
-.transcorp p{
-  font-family: OpenSans;
-  font-size: 1.4em;
-  font-weight: bold;
-  letter-spacing: 0.8px;
-  color: #ffffff;
-  opacity: 1;
+.text-position{
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    top: 20%;
+    left: 20%;
 }
+.welcome-to{
+  height: 40px;
+  font-family: SourceSansPro;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 4.9px;
+  color: #ffffff;
+}
+.trancorp_hotel{
+  height: 89px;
+  font-family: Georgia;
+  font-size: 52px;
+  letter-spacing: 3.1px;
+  text-align: center;
+  color: #ffffff;
+}
+.text-position p{
+  height: 19px;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff;
+}
+.clip{
+    font-size: 52px;
+    margin-top: 25px;
+}
+.clip :hover{
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
+}
+/* css styling for cards */
 .box{
+    width: 60%;
     height: 150px;
     background-color: #ffffff;
     position: absolute;
-    bottom: 10%;
-    left: 23.2222%;
+    bottom: 0%;
+    left: 19.2222%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: rgb(141, 135, 135) 0px 0px 15px 0px;
 }
-.card h2{
-    padding-bottom: 15px;
-}
+
 .card-left{
     display: flex;
-    width: 600px;
+    width: 100%;
     justify-content: space-around;
 }
-.card span{
-  font-family: BodoniSvtyTwoITCTT;
-  font-size: 48px;
-  letter-spacing: 2px;
-  color: #000000;
-}
-.border-style{
-    border-left: solid rgb(124, 124, 124) 1px;
-    border-right: solid rgb(104, 102, 102) 1px; 
-    height: 80px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
 .card-right{
-    display: flex;
-    flex-direction: column;
-    width: 294px;
-    height: 150px;
-    background-color: #053b58
+  width: 40%;
+  height: 150px;
+  background-color: #053b58;
+  color: #ffffff;
+  text-align: center;
 }
 .card-right p{
-  margin: auto;
-  width: 160px;
-  height: 18px;
-  font-family: SourceSansPro;
-  font-size: 14px;
-  color: #ffffff;
+    margin-top: 20px;
+    height: 10px;
+    font-family: SourceSansPro;
+    font-size: 14px;
+    margin-left: 33px;
+  }
+  .card-show{
+    border-right: 1.5px solid #ebebf2;
+    width: 25%;
+    padding-left: 15px;
+}
+.card-left p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #9b9b9b;
+}
+.card-left span{
+    font-size: 42px;
+    letter-spacing: 2px;
 }
 .availability{
-  margin: auto;
-  height: 25px;
-  padding: 7px 8px;
-  width: 140px;
-  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.5), 0 5px 4px 0 rgba(0, 0, 0, 0.5);
+  width: 170px;
+  height: 48px;
+  margin:auto;
   background-color: #ff7200;
-  color: white;
+  color: #ffffff;
+  margin-top: 20px;
+  border-radius: 4px;
 }
 .date{
     display: flex;
     justify-content: space-between;
 }
-.date .fa{
-    padding-top: 25px;
+/* media query for wrapper */
+@media screen and 
+  (min-width:400px) and
+  (max-width:800px){
+    .wrapper{
+        background-color: #fff;
+        height: 60vh;
+    }
+    .transcorp{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -0%;
+        justify-content: space-evenly;
+        color: white; 
+    }
+    .text-position{
+        text-align: center;
+        width:60%;
+    }
+    .welcome-to{
+        height: 40px;
+        font-family: SourceSansPro;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 3.9px;
+        color: #ffffff;
+    }
+    .trancorp_hotel{
+        height: 80px;
+        font-size: 30px;
+        letter-spacing: 2.1px;
+    }
+    .text-position p{
+        height: 19px;
+        font-size: 16px;
+    }
+    .box{
+        display: none;
+        /* display: flex;
+        flex-direction: column; */
+    }
+    /* /* .card-left{ */
+        /* display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40vh;
+    } */
 }
+
 /* Transcorp hotel about us section css */
 
 .about-us{
     width: 100%;
+    height: 100%;
     margin: auto;
+    margin-top: 170px;
     text-align: center;
     position: relative;
 }
 .about-us h3{
+    text-align: center;
     margin: 30px 30px;
+    height: 18px;
+    font-family: SourceSansPro;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4.9px;
+    color: #9b9b9b;
 }
 .about-us h1{
   margin: auto;
-  width: 550px;;
-  height: 20vh;
+  width: 40%;
+  height: 100%;
+  margin-bottom: 40px;
   font-family: Georgia;
   font-size: 52px;
   letter-spacing: 3.1px;
@@ -182,11 +300,11 @@
 }
 .about-us p{
     margin: auto;
-    width: 615px;
+    width: 60%;
     height: 40vh;
     margin-bottom: 50px;
     font-family: SourceSansPro;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 0.8px;
     text-align: center;
@@ -216,14 +334,68 @@
 .more h3{
     position: absolute;
     bottom: 3%;;
-    left: 38%;
+    left: 43%;
+    text-decoration: underline;
+    color: #9b9b9b;
+    font-weight: bolder;
+    font-family: SourceSansPro;
+    font-size: 18px;
+    letter-spacing: 2.0px;
 }
+/* media query for About-us div */
+@media screen and 
+  (min-width:400px) and
+  (max-width:800px){
+    .about-us{
+        margin-top: 40px;
+       
+    }
+    .about-us h1{
+        margin: auto;
+        width: 90%;
+        height: 100%;
+        margin-bottom: 40px;
+        font-family: Georgia;
+        font-size: 52px;
+        letter-spacing: 3.1px;
+        color: #000000;
+      }
+      .about-us p{
+        margin: auto;
+        width: 90%;
+        height: 35vh;
+        margin-bottom: 50px;
+        font-family: SourceSansPro;
+    }
+    .lounge{
+        width: 80%;
+        height: 30vh;
+        object-fit: contain;
+        position: absolute;
+        bottom: 10;
+        left: 1%;
+        
+    }
+    .more{
+        background-image: url(./images//aboutus_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat; 
+        height: 30vh;
+    }
+    
+    .more h3{
+        position: absolute;
+        bottom: 3%;;
+        left: 15%;
+
+    }
+  }
 
 /* Style for Interior section */
 .interior{
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 78vh;
 }
 .interior-details h5{
     padding: 30px;
@@ -231,6 +403,8 @@
     font-family: SourceSansPro;
     letter-spacing: 4.9px;
     color: #9b9b9b;
+    font-size: 14px;
+    font-weight: bold;
 }
 .interior h1{
   padding-bottom: 40px;
@@ -238,6 +412,7 @@
   font-family: Georgia;
   letter-spacing: 2.1px;
   color: #000000;
+  font-size: 36px;
 }
 .interior-details{
     width: 100%;
@@ -253,8 +428,8 @@
 }
 
 .room-view{
-  width: 833px;
-  height: 600px;
+  width: 100%;
+  height: 80vh;
   object-fit: contain;
 }
 .room-spec{
@@ -262,12 +437,13 @@
 }
 
 .room-info{
+    width: 80%;
     display: flex;
     margin: auto;
     justify-content: space-evenly; 
+    margin-bottom: 30px;
 }
 .room-info2{
-    width: 361px;
     height: 100px;
     background-color: #f5f5f5;
     margin-bottom: 10px;
@@ -281,30 +457,58 @@
   height: 80px;
   object-fit: contain
 }
-
-/* css for testimonial section */
+.overflow-control{
+    overflow-y: scroll;
+    width: 70%;
+    margin: auto;
+}
+/* media query for interior div */
+@media screen and 
+  (min-width:400px) and
+  (max-width:800px){
+    .interior{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+    }
+    .interior-view{
+     width:  100%;
+    }
+       
+    .room-view{
+     width: 100%;
+     height: 40vh;
+     object-fit: contain;
+    }
+    .overflow-control{
+        width: 90%;
+    }
+  }
+  /* css for testimonial section */
 
 .testimonial{
     background-image: url(./images//aboutus_bg.png);
     width: 100%;
     object-fit: cover;
-    height: 110vh;
+    height: 120vh;
     position: relative;
     /* height: 60vh; */
     position: relative;
 }
 .testiomial-box{
     width: 63%;
-    height: 80vh;
+    height: 90vh;
     background-color: #fff;
     box-shadow: #9b9b9b;
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 19.4567%;
 }
 .testiomial-box h2{
-    height: 7vh;
+    height: 10vh;
     padding-top: 60px;
+    padding-bottom: 30px;
     font-family: SourceSansPro;
     font-size: 14px;
     text-align: center;
@@ -312,7 +516,7 @@
     color: #9b9b9b;
 }
 .testiomial-box h1{
-  height: 41px;
+  height: 10vh;
   padding-bottom: 30px; 
   font-family: Georgia;
   font-size: 36px;
@@ -345,7 +549,7 @@
   text-align: center;
   color: #000000;
   position: absolute;
-  bottom: 5%;
+  bottom: 18%;
   left: 0;
 }
 .oval{
@@ -353,7 +557,67 @@
     height: 100px;
     object-fit: contain;
 }
+.test-scroll{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color:rgb(212, 208, 208);
+    position: absolute;
+    bottom: 10%;
+    
+}
+.test-scroll .fa{
+    padding-right: 10px;
+}
+.test-scroll .orange-fa{
+    color: #da751d;
+}
 
+/* media query for testimonial div */
+@media screen and 
+  (min-width:400px) and
+  (max-width:800px){
+      .testiomial-box{
+        width: 80%;
+        height: 100vh;
+        position: absolute;
+        top: 7%;
+        left: 11%;
+    }
+    .testiomial-box h2{
+        height: 8vh;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    .testiomial-box h1{
+        height: 15vh;
+      }
+    .testiomial-box p{
+        margin: auto;
+        width: 90%;
+        height: 45vh; 
+        margin-top: 20px;
+    }
+    .guest-photo{
+        width: 30%;
+        margin: auto;
+    }
+    .guest-photo span{
+        width: 50%;
+        position: absolute;
+        bottom: 9%;
+        left: 25%;
+    }
+    .test-scroll{
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: rgb(82, 78, 78);
+        position: absolute;
+        bottom: 4%; 
+        left: 35%;
+    }
+  }
 /* css for Blog div */
 .blog{
     width: 100%;
@@ -378,31 +642,48 @@
     display: flex;
     justify-content: space-evenly;
 }
+.card-style{
 
+    margin-right: 10px;
+}
 .hotel-show{
-    width: 300px;
-    object-fit: contain;
-    height: 225px;
+    width: 100%;
+    object-fit: cover;
+    height: 40vh;
+}
+.hotel-display{
+    width: 100%;
+   
 }
 .blog-details{
-    width: 300px;
+    width: 100%;
     background-color: #fff;
-    height: 155px;
+    height: 165px;
     padding-top: 20px;
+    position: relative;
 }
 .blog-details span, p{ 
   height: 18px;
   font-family: SourceSansPro;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.8px;
-  text-align: center;
+  padding-left: 10px;
+  text-align: start;
   color: #9b9b9b;
 }
 .blog-details span{
     display: block;
 }
+.blog-details p{
+    position: absolute;
+    left:5%;
+    bottom: 0;
+}
+.blog-details .fa{
+    margin-left: 20px;
+}
 .blog-details a{
-    width: 268px;
+    width: 20px;
     height: 45px;
     font-family: Georgia;
     font-size: 14px;
@@ -412,7 +693,42 @@
     margin-top: 10px;
     margin-bottom: 10px;
     
+} 
+/* media query for blog div */
+@media screen and 
+  (min-width:400px) and
+  (max-width:800px){
+    .blog{
+        height: 190vh;
+    }
+    .blog h1{
+        width: 80%;
+        height: 15vh;
+      }
+      
+    .card-flex{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .hotel-show{
+        width: 100%;
+        object-fit: cover;
+        height: 225px;
+    }
+    .blog-details{
+        width: 100%;
+        background-color: #fff;
+        height: 155px;
+        padding-top: 20px;
+    }
+    .card-style{
+        width: 90%;
+    }
 }
+/* css for contact div */
 .contact{
     display: flex;
     width: 100%;
@@ -443,8 +759,8 @@
 .contact-us h2{
     width: 60%;
     margin: auto;
-    height: 5vh;
-    padding-top: 70px;
+    height: 10vh;
+    padding-top: 20px;
     font-family: SourceSansPro;
     font-size: 14px;
     font-weight: bold;
@@ -475,9 +791,12 @@
     color: #9b9b9b;
     text-align: left;
 }
-
+.naija span{
+    color: black;
+    font-weight: bold;
+}
 .contact-us .num{
-    width: 60%;
+    width: 65%;
     margin: auto;
     height: 55px;
     font-family: Georgia;
@@ -495,12 +814,39 @@
     letter-spacing: 0.8px;
     color: #9b9b9b;
     text-align: left;
+} 
+
+/* media query for contact div */
+@media screen and 
+  (min-width:400px) and
+  (max-width:800px){
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+    } 
+    .contact-us{
+        height: 100%;
+    } 
+    .contact-us .address{
+        width: 70%;
+    }
+    .contact-us .call{
+        height: 10vh;
+        margin-top: 20px;
+       
+    }
+    .contact-us .num {
+        height: 20vh;;
+    }
 }
+
 /* footer div css */
 .footer{
     width: 100%;
     background-color: #211f20;
-    height: 50vh;
+    height: 43vh;
 }
 .footer-menu{
     display: flex;
@@ -510,24 +856,25 @@
     align-items: center;
 }
 ul{
-    height: 20vh;
-    padding-top: 80px;
+    height: 30vh;
+    padding-top: 20px;
 }
 li{
     list-style: none;
     color:#9b9b9b;
-    padding-top: 10px;
+    padding-top: 30px;
     height: 18px;
     font-family: SourceSansPro;
     font-size: 18px;
     letter-spacing: 0.4px;
    
 }
-
 hr{
     width: 80%;
     margin: auto;
-    margin-top: 30px;
+    color: white;
+    margin-top: 10px;
+    border-style: solid;
 }
 
 .signup{
@@ -569,5 +916,44 @@ margin-top: 30px;
 .socials{
    position: absolute;
    right: 0;
+   bottom: 3%;
 }
+/* media query for footer */
 
+@media screen and 
+  (min-width:400px) and
+  (max-width:800px){
+    .footer{
+        width: 100%;
+        background-color: #211f20;
+        height: 120vh;
+    }
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto; 
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .footer-nav{
+      width: 60%;
+      margin: auto;
+    }
+    ul{
+        height: 25vh;
+        padding-top: 10px;
+    }
+    li{
+        padding-top: 35px;
+       
+    }
+    .signup{
+       margin-top: 30px;
+    }
+    hr{
+        display: none;
+    }
+
+}
